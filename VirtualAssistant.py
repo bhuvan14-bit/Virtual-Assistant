@@ -1,11 +1,11 @@
-import speech_recognition as sr
+import speech_recognition as sper
 import pyttsx3
 import pywhatkit
 import datetime
 import wikipedia
 import pyjokes
 
-listener = sr.Recognizer()
+listener = sper.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
@@ -18,7 +18,7 @@ def talk(text):
 
 def take_command():
     try:
-        with sr.Microphone() as source:
+        with sper.Microphone() as source:
             print('listening...')
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
