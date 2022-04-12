@@ -53,7 +53,7 @@ def run_virtualexa():
     elif 'what are the language spoken in India' in command:
         talk('Hindi Tamil Telugu English Kannada Malayalam Gujarathi Punjabi and many more')
     elif 'Which company presented BMW Cars for his employees' in command:
-        talk('It is a leading Company in india named Kissflow')
+        talk('It is a leading IT Company in india named Kissflow')
     elif 'joke' in command:
         talk(pyjokes.get_joke())
     else:
