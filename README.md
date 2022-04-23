@@ -10,6 +10,12 @@ Build an artificial Assistant
 
 Installation For windows users
 
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+Pocketsphinx
+pyaudio
+
+pip install flask speechReconition pywhatkit pyttsx3 wikipedia pyjokes
+
 (run those in command prompt/cmt/terminal) For the robot to listen to our voice/speech pip install speechRecognition
 
 To speak out, or text to speech pip install pyttsx3
