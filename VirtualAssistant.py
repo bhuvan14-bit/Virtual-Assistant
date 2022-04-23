@@ -1,3 +1,4 @@
+import chunk
 import speech_recognition as sper
 import pyttsx3
 import pywhatkit
@@ -18,10 +19,10 @@ def talk(text):
 
 def take_command():
     try:
-        with sper.Microphone() as source:
+        with sper.Microphone(chunk_size=256) as source:
             print('listening...')
             voice = listener.listen(source)
-            command = listener.recognize_google(voice)
+            command = listener.recognize_sphinx(voice)
             command = command.lower()
             if 'virtualexa' in command:
                 command = command.replace('virtualexa', '')
